@@ -57,7 +57,9 @@ var monContainer = document.getElementById("container");
 monContainer.appendChild(newPara);
 
 // IV. Gestion de l'évènement clic
+	// target element 
 var t = document.getElementById("toClick");
+	// ajouter écouteur de l'event click et rediriger une fois le clic détécté vers la fonction showMessage
 t.addEventListener("click", showMessage, false);
 
 

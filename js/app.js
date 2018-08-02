@@ -60,9 +60,14 @@ monContainer.appendChild(newPara);
 	// target element 
 var t = document.getElementById("toClick");
 	// ajouter écouteur de l'event click et rediriger une fois le clic détécté vers la fonction showMessage
-t.addEventListener("click", showMessage, false);
+t.addEventListener("click", function(){
+	 alert('vous avez cliqué le paragraphe toCLick');
+});
 
 
 function showMessage() {
     alert('vous avez cliqué le paragraphe toCLick');
 };
+
+t.addEventListener("click", showMessage, false);
+
